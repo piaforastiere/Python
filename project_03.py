@@ -27,7 +27,6 @@ hard_level_answers = ["Python", "clear", "oriented", "functional"]
 
 replacement_list = ["__1__", "__2__","__3__","__4__"]
 
-# begining of game asking user to select a level
 def level_choose():
     print "Welcome to fill in the blanks game. Remember you only have 4 attemps per question!"
     level_name = raw_input("Please choose level of difficulty: easy, medium, hard.\n").lower()
@@ -41,7 +40,7 @@ def level_choose():
         print "Please choose only easy, medium or hard"
     print level_choose
 
-# Starts the quiz, checks answers, limits users input
+
 def process_paragraph(quiz, blanks, answers):
 	print quiz
 	for count_blanks in range(0, len(blanks)):
